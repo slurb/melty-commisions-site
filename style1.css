@@ -1,9 +1,38 @@
+/*site created by slurb#2136*/
 html {
     overflow: hidden;
 }
 
 p {
     text-align: center;	
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: black;
+	margin: 0px;
+	display: inline-block;
+}
+
+.footer-child {
+	display: inline-block;
+	font-size: small;
+	white-space: nowrap;
+	text-overflow: none;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#footer2 {
+	text-align: right;
+	width: 50%;
+}
+#footer {
+	width: 49%;
+    text-align: left;
 }
 
 #background-grad {
@@ -69,7 +98,7 @@ img.logo {
     transform: translate(-50%, -50%);
 }
 
-div.login-box {
+.login-box {
     padding: 2em;
     height: 238px;
     width: 399px;
@@ -86,8 +115,15 @@ div.login-box {
         white-space: nowrap;
     }
 	
-	p {
+	p.login-box {
 		white-space: normal
+	}
+	#footer {
+		visibility: hidden;
+		width: 0px;
+	}
+	#footer2 {
+		text-align: left;
 	}
 }
 .nav-child:hover {
