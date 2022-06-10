@@ -1,0 +1,96 @@
+html {
+    overflow: hidden;
+}
+
+p {
+    text-align: center;	
+}
+
+#background-grad {
+    background-image: -webkit-linear-gradient(34deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
+    background-image: -moz-linear-gradient(34deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
+    background-image: -o-linear-gradient(34deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
+    background-image: linear-gradient(56deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+    padding: 0px;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+div.background {
+    margin: 0px;
+    background-image: url(imgs/stripes.svg);
+    background-repeat: repeat;
+    min-height: 1000px;
+    max-height: 100%;
+    opacity: 0.21;
+    background-position: 0px;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+	top: 1;
+	padding: 0;
+}
+
+.nav-child {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    text-decoration: none;
+    -webkit-transition: all 200ms ease-in 0s;
+    -o-transition: all 200ms ease-in 0s;
+    transition: all 200ms ease-in-out 0s;
+	border-bottom: 0px solid #AE0000;
+}
+h1, h2, h3, h4, p {
+    font-family: source-code-pro;
+    font-style: normal;
+    font-weight: 200;
+    color: hsla(0,0%,87%,1.00);
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div.login-box {
+    padding: 2em;
+    height: 238px;
+    width: 399px;
+    background-color: hsla(0,0%,0%,0.89);
+    border-radius: 9px;
+    margin-top: 0px;
+}
+
+@media (max-width: 470px){
+    div.login-box {
+        width: 65%;   
+    }
+    h1, h2, h3, h4, p {
+        white-space: nowrap;
+    }
+	
+	p {
+		white-space: normal
+	}
+}
+.nav-child:hover {
+    border-bottom: thick solid #AE0000;
+	
+}
