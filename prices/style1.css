@@ -2,7 +2,22 @@
 html {
     overflow: hidden;
 }
-
+table {
+	display: flex;
+	justify-content: center;
+}
+tbody {
+    display: table-row-group;
+}
+tr {
+	display: table-row;
+	
+}
+th {
+	display: table-cell;
+	border: 1px solid #FFFFFF;
+	padding: 3em;
+}
 p {
     text-align: center;	
 }
@@ -77,7 +92,7 @@ div.background {
     transition: all 200ms ease-in-out 0s;
 	border-bottom: 0px solid #AE0000;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, th {
     font-family: source-code-pro;
     font-style: normal;
     font-weight: 100;
@@ -102,25 +117,23 @@ img.logo {
 }
 
 .login-box {
-    padding: 2em;
-    max-height: 238px;
-    width: 399px;
+    padding: 2em 0em;
+    max-width: 65%;
     background-color: hsla(0,0%,0%,0.89);
     border-radius: 9px;
-    margin-top: 0px;
-}
-.login-box-child {
-	margin: 0px 1px;
+    margin-top: 15px;
 }
 @media (max-width: 470px){
-    div.login-box {
-        width: 65%;  
+    .login-box {
+        width: 95%;  
 		max-height: 1000px;
     }
-    h1, h2, h3, h4, p {
+    h1, h2, h3, h4, p, th {
        
     }
-	
+	th {
+		padding: 1.5em 0px;
+	}
 	p.login-box {
 		white-space: normal
 	}
@@ -134,5 +147,19 @@ img.logo {
 }
 .nav-child:hover {
     border-bottom: thick solid #AE0000;
+	
+}
+
+@media (min-width: 471px) and (max-width: 1050px){
+	th {
+		padding: 2em 1em;
+	}
+	.login-box {
+		width: 90%;
+	}
+	
+}
+
+@media (max-height:700px) {
 	
 }

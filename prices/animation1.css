@@ -1,0 +1,11 @@
+@keyframes example {
+    from{background-position: 0px;}
+    to {background-position: 40px;}
+}
+
+div.background {
+    animation-name: example;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
