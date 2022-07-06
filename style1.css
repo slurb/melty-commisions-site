@@ -54,7 +54,6 @@ div.background {
     opacity: 0.76;
     background-position: 0px;
 }
-
 .nav-bar {
     width: 100%;
     background-color: black;
@@ -62,6 +61,14 @@ div.background {
 	top: 1;
 	padding: 0;
 }
+.paper-lines {
+    width: 100px;
+    height: 1000px;
+    position: fixed;
+    background-image: url("imgs/red-line.svg");
+    background-repeat: repeat-y;
+}
+
 
 .nav-child {
     display: inline-block;
