@@ -2,26 +2,26 @@
 html {
     overflow: hidden;
 }
-table {
-	display: flex;
-	justify-content: center;
-}
-tbody {
-    display: table-row-group;
-}
-tr {
-	display: table-row;
-	
-}
-th {
-	display: table-cell;
-	border: 1px solid #FFFFFF;
-	padding: 3em;
-}
+
 p {
     text-align: center;	
 }
 
+table {
+    border: 1px solid white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    padding: 15px;
+    
+}
+th {
+    border: 1px solid white;
+    padding: 10px;
+    padding-top: auto;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 29px;
+}
 footer {
 	position: fixed;
 	bottom: 0px;
@@ -51,10 +51,6 @@ footer {
 }
 
 #background-grad {
-    background-image: -webkit-linear-gradient(34deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
-    background-image: -moz-linear-gradient(34deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
-    background-image: -o-linear-gradient(34deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
-    background-image: linear-gradient(56deg,rgba(0,0,0,1.00) 0%,rgba(219,30,30,1.00) 100%);
     overflow: hidden;
     touch-action: none;
     -ms-touch-action: none;
@@ -65,14 +61,14 @@ footer {
 
 div.background {
     margin: 0px;
-    background-image: url(imgs/stripes.svg);
+    background-image: url("imgs/lined-paperAsset 3.svg");
+    background-size: 199px;
     background-repeat: repeat;
-    min-height: 1000px;
+    min-height: 2000px;
     max-height: 100%;
-    opacity: 0.21;
+    opacity: 0.84;
     background-position: 0px;
 }
-
 .nav-bar {
     width: 100%;
     background-color: black;
@@ -80,6 +76,14 @@ div.background {
 	top: 1;
 	padding: 0;
 }
+.paper-lines {
+    width: 100px;
+    height: 2000px;
+    position: fixed;
+    background-image: url("imgs/red-line.svg");
+    background-repeat: repeat-y;
+}
+
 
 .nav-child {
     display: inline-block;
@@ -94,8 +98,8 @@ div.background {
 }
 h1, h2, h3, h4, p, th {
     font-family: source-code-pro;
-    font-style: normal;
-    font-weight: 100;
+    font-style: 100;
+    font-weight: 200;
     color: hsla(0,0%,87%,1.00);
     text-align: center;
 }
@@ -117,23 +121,24 @@ img.logo {
 }
 
 .login-box {
-    padding: 2em 0em;
-    max-width: 65%;
+    padding: 2em;
+    
     background-color: hsla(0,0%,0%,0.89);
     border-radius: 9px;
-    margin-top: 15px;
+    margin-top: 0px;
+}
+.login-box-child {
+	margin: 0px 1px;
 }
 @media (max-width: 470px){
-    .login-box {
-        width: 95%;  
+    div.login-box {
+        width: 65%;  
 		max-height: 1000px;
     }
-    h1, h2, h3, h4, p, th {
+    h1, h2, h3, h4, p {
        
     }
-	th {
-		padding: 1.5em 0px;
-	}
+	
 	p.login-box {
 		white-space: normal
 	}
@@ -147,19 +152,5 @@ img.logo {
 }
 .nav-child:hover {
     border-bottom: thick solid #AE0000;
-	
-}
-
-@media (min-width: 471px) and (max-width: 1050px){
-	th {
-		padding: 2em 1em;
-	}
-	.login-box {
-		width: 90%;
-	}
-	
-}
-
-@media (max-height:700px) {
 	
 }

@@ -47,11 +47,11 @@ footer {
 div.background {
     margin: 0px;
     background-image: url("imgs/lined-paperAsset 3.svg");
-    background-size:199px;
+    background-size: 199px;
     background-repeat: repeat;
-    min-height: 1000px;
+    min-height: 2000px;
     max-height: 100%;
-    opacity: 0.76;
+    opacity: 0.84;
     background-position: 0px;
 }
 .nav-bar {
@@ -63,7 +63,7 @@ div.background {
 }
 .paper-lines {
     width: 100px;
-    height: 1000px;
+    height: 2000px;
     position: fixed;
     background-image: url("imgs/red-line.svg");
     background-repeat: repeat-y;
