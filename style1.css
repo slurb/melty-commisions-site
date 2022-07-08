@@ -128,6 +128,9 @@ img.logo {
 	p.login-box {
 		white-space: normal
 	}
+	.nav-bar a {
+		display: none;
+	}
 	#footer {
 		visibility: hidden;
 		width: 0px;

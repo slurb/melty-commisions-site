@@ -20,16 +20,18 @@
 
 <body id="background-grad">
 <div class="background">
-<div class="paper-lines"></div>
+  <div class="paper-lines"></div>
   <div class="nav-bar"> <a href="#" title="main" target="_self" class="nav-child">
     <h4>INFO</h4>
     </a> <a href="prices/" title="main" target="_self" class="nav-child">
-      <h4>PRICES</h4>
-      </a> <a href="prices" title="main" target="_self" class="nav-child">
-        <h4>EXAMPLES</h4>
-        </a> <a href="" title="main" target="_self" class="nav-child">
-          <h4>CONTACT ME</h4>
-        </a></div>
+    <h4>PRICES</h4>
+    </a> <a href="prices" title="main" target="_self" class="nav-child">
+    <h4>EXAMPLES</h4>
+    </a> <a href="" title="main" target="_self" class="nav-child">
+    <h4>CONTACT ME</h4>
+    </a> <a href="javascript:void(0);" class="nav-child" onclick="myFunction()">
+    <h4>hamburger menu</h4>
+    </a> </div>
   <div class="login-box center"> <img class="logo" src="imgs/melty-pfp.webp" alt="" width="111" height="111"/>
     <h2 class="login-box-child">Hello, my name is melty!</h2>
     <p class="login-box-child">&nbsp;</p>
@@ -40,5 +42,19 @@
     <p class="footer-child" id="footer2">melty commisions 2022®</p>
   </footer>
 </div>
+<script>
+/*
+	simple javascript from w3schools because im lazy xd
+	https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+*/
+function myFunction() {
+  var x = document.getElementById("nav-bar");
+  if (x.className === "nav-bar") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav.bar";
+  }
+}	
+</script>
 </body>
 </html>
